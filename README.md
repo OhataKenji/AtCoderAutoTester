@@ -32,7 +32,7 @@ a.cpp b.cpp c.cpp d.cpp
 
 run command
 ```
-$ python AAT.py
+$ AAT.py
 ```
 
 ## To You
