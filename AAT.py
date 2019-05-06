@@ -96,7 +96,7 @@ class AtCoderAutoTester():
                 "./{}".format(problem),  stdin=subprocess.PIPE, stdout=subprocess.PIPE)
             rtn = rtn.communicate(sample["input"].encode())[0].decode('utf-8')
 
-            if rtn == sample["output"]:
+            if rtn.strip() == sample["output"].strip():
                 print('OK')
             else:
                 print("FAILED")
